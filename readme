@@ -1,0 +1,10 @@
+10k World
+
++ Fixed bug rendering in browsers IE9 preview, Chrome, Safari and Opera
+More information about the error: the method of Canvas "arc" radius may not take a negative value. In FireFox it is ignored. 
++ Fixed errors in translation 
++ Button "Cure All" fixed 
++ Added button "Infect All"
++ Regained the opportunity, when hungry creatures begin to eat themselves
+
+Regards, Rostislav.

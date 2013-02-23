@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;">
+		<title>10k World</title>
+		<style type="text/css">
+			body {color:#0f0; background:#000;}
+			button {width:200px;clear:both;}
+			#legend {font-size:10pt;}
+			div {float:left;}
+		</style>
+	</head>
+	<body>
+		<div style="width: 200px; overflow: hidden; ">
+			<h3 id="time">00:00:00:00</h3>
+			<h4 id="count">0</h4>
+			<h4 id="born">0</h4>
+			<h4 id="max">0</h4>
+			<button onclick="w = new World().Init();">Restart</button>
+			<button onclick="w.InfectAll();">Infect all</button>
+			<button onclick="w.CureAll();">Cure all</button>
+			<button onclick="w.KillAll();">Kill all</button>
+			<p id="legend">
+				Legend:<br />
+				<b>green</b> - alive<br />
+				<b style="color: #888">grey</b> - dead<br />
+				<b style="color: #F80">orange</b> - infected<br />
+				<i>Click on canvas to add creature.</i>
+			</p>
+		</div>
+		<div style="margin: 0 20p; width: 640px">
+			<canvas id="canv" width="640px" height="480px">
+			</canvas>
+			<textarea id="history" style="background: #000; color: #0f0; width: 640px; height: 200px; border: 0;">
+			</textarea>
+			<script type="text/javascript" src="10kworld.js"></script>
+		</div>
+	</body>
+</html>
